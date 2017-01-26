@@ -1,4 +1,8 @@
-# Keep the history persistent.
+# Make command history persistent.
+
+# This file should be executed by sourcing it, e.g.:
+# source phist.sh
+
 # Code from:
 # http://eli.thegreenplace.net/2013/06/11/keeping-persistent-history-in-bash
 bash_persistent_history()
@@ -45,7 +49,7 @@ HISTCONTROL=ignorespace:ignoredups
 HISTTIMEFORMAT="%Y-%m-%d %T "
 
 # Setup aliases
-# Search for a command in the persisent history file.
+# Search for a command in the persistent history file.
 alias phgrep='cat ~/.persistent_history|grep'
 # Search the history belonging to the current session.
 alias hgrep='history|grep'
